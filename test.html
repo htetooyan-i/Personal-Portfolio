@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EmailJS Contact Form</title>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+  <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    input, textarea { width: 100%; padding: 10px; margin-bottom: 1rem; }
+    button { padding: 10px 20px; background: black; color: white; border: none; }
+  </style>
+</head>
+<body>
+
+  <h1>Contact Me</h1>
+  <form id="emailForm">
+    <input type="email" name="email" placeholder="Enter your email" required />
+    <textarea name="message" placeholder="Your message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <script>
+    // Wait until window fully loads to ensure emailjs is ready
+    window.addEventListener('load', function () {
+      if (typeof emailjs === 'undefined') {
+        console.error('❌ EmailJS failed to load.');
+        return;
+      }
+
+      // ✅ Replace with your actual EmailJS Public Key
+      emailjs.init('pdjZXMPCcC5OfIxUp');
+
+      // Handle form submission
+      const form = document.getElementById('emailForm');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm('service_h12aru8', 'template_q5u0eav', form)
+          .then(() => {
+            alert('✅ Email sent successfully!');
+            form.reset();
+          })
+          .catch((error) => {
+            alert('❌ Failed to send email. Check console.');
+            console.error(error);
+          });
+      });
+    });
+  </script>
+
+</body>
+</html>

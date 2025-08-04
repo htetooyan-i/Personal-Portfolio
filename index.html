@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="module" src="config.js"></script>
+        <title>i's Personal Portfolio</title>
+    </head>
+    <body class="bg-white text-black">
+        <header class="flex p-4 text-black secondary-background">
+            <!-- Left section -->
+            <div class="w-1/3 flex items-center">
+            <p class="mx-10 handlee-regular">Htetooyan's personal portfolio</p>
+            </div>
+
+            <!-- Right section -->
+            <div class="w-2/3 flex items-center justify-between">
+                <ul class="flex w-full">
+                    <li class="flex-1 text-center"><a href="#about-me">About Me</a></li>
+                    <li class="flex-1 text-center"><a href="#skills">Skills</a></li>
+                    <li class="flex-1 text-center"><a href="#projects">Projects</a></li>
+                    <li class="flex-1 text-center"><a href="#contact-me" class="py-2 px-5 bg-black text-white rounded-4xl shadow-xl/30">Contact Me</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <div class="primary-background rounded-br-[50px] rounded-bl-[50px]">
+            <div class="secondary-background rounded-br-[50px] rounded-bl-[50px]">
+                <div class="primary-background rounded-br-[50px] rounded-bl-[50px]">
+                    <div id="thumbnail" class="secondary-background rounded-br-[50px] rounded-bl-[50px] p-10 flex items-center justify-center gap-30">
+                        <div>
+                            <h3 class="montserrat-semi-bold text-[20px]">Hello, I am</h3>
+                            <h1 class="montserrat-bold text-[30px]">Htet Oo Yan</h1>
+                            <h5 class="montserrat-bold text-[15px] text-gray-500">Back-end Developer/ ML Engineer</h5>
+
+                            <div class="flex gap-5 mt-4 text-2xl">
+                                <a href="https://github.com/yourusername" target="_blank" class="text-gray-600 hover:text-black">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/yourusername" target="_blank" class="text-blue-600 hover:text-blue-800">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://youtube.com/yourchannel" target="_blank" class="text-red-600 hover:text-red-800">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://avatars.githubusercontent.com/u/105771626?v=4" alt="Htet Oo Yan" class="rounded-full w-50 h-50 shadow-lg" />
+                        </div>
+                    </div>
+                    <div class="max-w-screen-lg mx-auto py-10">
+                        <h1 id="about-me" class="w-[200px] text-center block mx-auto montserrat-semi-bold text-2xl px-5 py-3 border-2 border-black">About Me</h1>
+
+                        <p class="my-10 montserrat-regular w-2/3 mx-auto">I'm a Computer Science student from Myanmar currently preparing for university in London. I enjoy building smart applications using modern tools like PyTorch, Vue, and Swift especially anything related to AI and real-world impact.</p>
+
+                        <div class="flex justify-between items-top gap-10">
+                            <!-- DEVELOPMENT -->
+                            <div>
+                                <h2 class="text-xl montserrat-semi-bold tracking-[0.3em]">DEVELOPMENT</h2>
+                                <p class="my-10 montserrat-regular text-justify">
+                                    I specialize in building modern, responsive, and scalable web applications from scratch. Whether it's a portfolio, an e-commerce platform, or a fullstack SaaS app, I can turn concepts into working solutions using technologies like Vue.js, Tailwind CSS, FastAPI, and more. My focus is on clean code, user experience, and performance.
+                                </p>
+                            </div>
+
+                            <!-- MAINTENANCE -->
+                            <div>
+                                <h2 class="text-xl montserrat-semi-bold tracking-[0.3em]">MAINTENANCE</h2>
+                                <p class="my-10 montserrat-regular text-justify">
+                                    Beyond development, I provide ongoing support and maintenance to keep your website or app running smoothly. From fixing bugs to updating features and ensuring security, I make sure your project stays optimized, up-to-date, and aligned with evolving user needs and technologies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="max-w-screen-lg mx-auto py-10">
+                    <h1 id="skills" class="w-[200px] text-center block mx-auto montserrat-semi-bold text-2xl px-5 py-3 border-2 border-black">Skills</h1>
+
+                    <div class="my-10 pt-10">
+                        <h2 class="text-xl montserrat-semi-bold tracking-[0.3em] my-10">PROGRAMMING LANGUAGES</h2>
+                        <div class="grid grid-cols-4 gap-4 text-center items-bottom">
+                            <div class="p-4">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110">
+                                <p class="montserrat-regular tracking-widest">PYTHON</p>
+                            </div>
+                            <div class="p-4">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++ icon" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110"/>
+                                <p class="montserrat-regular tracking-widest">C++</p>
+                            </div>
+                            <div class="p-4">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="C" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110">
+                                <p class="montserrat-regular tracking-widest">C</p>
+                            </div>
+                            <div class="p-4">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" alt="Swift icon" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110"/>
+                                <p class="montserrat-regular tracking-widest">Swift</p>
+                            </div>
+                            <div class="p-4">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" alt="Kotlin icon" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110"/>
+                                <p class="montserrat-regular tracking-widest">KOTLIN</p>
+                            </div>
+                            <div class="p-4">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="javascript icon" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110"/>
+                                <p class="montserrat-regular tracking-widest">JAVASCRIPT</p>
+                            </div>
+                            <div class="p-4">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java icon" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110"/>
+                                <p class="montserrat-regular tracking-widest">JAVA</p>
+                            </div>
+                            <div class="p-4">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP icon" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110"/>
+                                <p class="montserrat-regular tracking-widest">PHP</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-10 pt-10">
+                        <h2 class="text-xl montserrat-semi-bold tracking-[0.3em] my-10">FRAMEWORKS & LIBRARIES</h2>
+                        <div class="grid grid-cols-4 gap-4 text-center items-bottom">
+                            <div class="p-4">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110">
+                                <p class="montserrat-regular tracking-widest">VUE.JS</p>
+                            </div>
+                            <div class="p-4">
+                                <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110">
+                                <p class="montserrat-regular tracking-widest">TAILWIND</p>
+                            </div>
+                            <div class="p-4">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110">
+                                <p class="montserrat-regular tracking-widest">PYTORCH</p>
+                            </div>
+                            <div class="p-4">
+                                <?xml version="1.0" encoding="UTF-8"?>
+                                <svg class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+                                    <title>FastAPI</title>
+                                    <g>
+                                        <path d="M128.000174,7.10542736e-15 C57.3307104,7.10542736e-15 0,57.3306183 0,127.999964 C0,198.669366 57.3307104,256.000056 128.000174,256.000056 C198.669334,256.000056 256,198.669366 256,127.999964 C256,57.3306183 198.669334,7.10542736e-15 128.000174,7.10542736e-15 Z M121.330642,230.60518 L121.330642,150.31662 L76.6976362,150.31662 L140.825663,25.3948123 L140.825663,105.683328 L183.791664,105.683328 L121.330642,230.60518 Z" fill="#009688"></path>
+                                    </g>
+                                </svg>
+                                <p class="montserrat-regular tracking-widest">FASTAPI</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-10 pt-10">
+                        <h2 class="text-xl montserrat-semi-bold tracking-[0.3em] my-10">TOOLS & PLATFORMS</h2>
+                        <div class="grid grid-cols-4 gap-4 text-center items-bottom">
+                            <div class="p-4">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110">
+                                <p class="montserrat-regular tracking-widest">FIREBASE</p>
+                            </div>
+                            <div class="p-4">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110">
+                                <p class="montserrat-regular tracking-widest">GIT</p>
+                            </div>
+                            <div class="p-4">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110">
+                                <p class="montserrat-regular tracking-widest">GITHUB</p>
+                            </div>
+                            <div class="p-4">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg" alt="Xcode" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110">
+                                <p class="montserrat-regular tracking-widest">XCODE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-10 pt-10">
+                        <h2 class="text-xl montserrat-semi-bold tracking-[0.3em] my-10">SPECIALIZED AREAS</h2>
+                        <div class="grid grid-cols-4 gap-4 text-center items-bottom">
+                            <div class="p-4">
+                                <img src="https://developer.apple.com/assets/elements/icons/core-ml/core-ml-64x64_2x.png" alt="Core ML" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110">
+                                <p class="montserrat-regular tracking-widest">CORE ML</p>
+                            </div>
+                            <div class="p-4">
+                                <img src="https://cdn-icons-png.flaticon.com/512/130/130304.png" alt="Mobile Dev" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110">
+                                <p class="montserrat-regular tracking-widest">iOS DEVELOPMENT</p>
+                            </div>
+                            <div class="p-4">
+                                <img src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="Google Colab" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110">
+                                <p class="montserrat-regular tracking-widest">GOOGLE COLAB</p>
+                            </div>
+                            <div class="p-4">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="w-32 h-32 mx-auto mb-2 transition-all duration-300 ease-in-out hover:scale-105 hover:brightness-110">
+                                <p class="montserrat-regular tracking-widest">DOCKER</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>  
+            </div>
+            <div class="max-w-screen-lg mx-auto py-10">
+                <h1 id="projects" class="w-[200px] text-center block mx-auto montserrat-semi-bold text-2xl px-5 py-3 border-2 border-black">Projects</h1>
+
+                <section class="space-y-16 my-20 px-4 md:px-20">
+                <!-- Project 1 -->
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <!-- Image -->
+                    <div class="bg-gray-300 rounded-lg h-64 flex justify-center items-center">
+                        <img src="Screenshot 2025-08-04 at 16.59.13.png" alt="" class="h-64 object-cover rounded-lg">
+                    </div>
+                    <!-- Text -->
+                    <div>
+                        <h3 class="text-xl font-semibold tracking-widest mb-2">WEATHER FORECAST</h3>
+                        <p class="text-gray-700">
+                            A real-time weather forecasting web application built using Vue.js. It utilizes OpenWeatherMap API to provide current weather data, hourly and daily forecasts, and dynamically updates based on user-selected cities. Designed with responsive UI and features like location autocomplete, timezone conversion, and weather icons.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Image Right) -->
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <!-- Text -->
+                    <div>
+                        <h3 class="text-xl font-semibold tracking-widest mb-2">STREET CODE ONLINE SHOP</h3>
+                        <p class="text-gray-700">
+                            An e-commerce platform developed using HTML, CSS, JavaScript (frontend), and PHP with MySQL (backend). Features include user authentication, shopping cart, product filtering, order tracking, and admin dashboard for inventory management. Mobile-friendly with intuitive navigation and secure checkout process.
+                        </p>
+                    </div>
+                    <!-- Image -->
+                    <div class="bg-gray-300 rounded-lg h-64 flex justify-center items-center">
+                        <img src="https://img.icons8.com/ios-filled/100/app-symbol.png" alt="Default app icon" class="h-32 object-contain opacity-60" />
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <!-- Image -->
+                    <div class="bg-gray-300 rounded-lg h-64 flex justify-center items-center">
+                        <img src="Icon-App-60x60@3x.png" alt="" class="h-32 object-cover rounded-lg">
+                    </div>
+                    <!-- Text -->
+                    <div>
+                        <h3 class="text-xl font-semibold tracking-widest mb-2">NUTRISCAN</h3>
+                        <p class="text-gray-700">
+                            A Swift-based mobile application for nutrition tracking and budgeting. Users can scan food items using Core ML and a pre-trained image classification model from Hugging Face to identify food types and receive calorie estimates. The app also includes budget planning tools, meal logs, and Apple Health integration.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 4 (Image Right) -->
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <!-- Text -->
+                    <div>
+                        <h3 class="text-xl font-semibold tracking-widest mb-2">KONYAT</h3>
+                        <p class="text-gray-700">
+                            A social community app aimed at connecting Myanmar people living abroad. Built with a focus on simplicity and speed, the app supports business discovery, reviews, chat, user profiles, and a newsfeed. The backend is powered by FastAPI and integrated with Firebase for real-time updates and user authentication.
+                        </p>
+                    </div>
+                    <!-- Image -->
+                    <div class="bg-gray-300 rounded-lg h-64 flex justify-center items-center">
+                        <img src="Icon-1024.png" alt=""  class="h-32 object-cover rounded-lg">
+                    </div>
+                </div>
+
+
+                </section>
+
+            </div> 
+            <div id="contact-me" class="secondary-background rounded-tr-[50px] rounded-tl-[50px]">
+                <div class="max-w-screen-lg mx-auto py-10">
+                    <h1 class="w-[200px] text-center block mx-auto montserrat-semi-bold text-2xl px-5 py-3 border-2 border-black">Contact Me</h1>
+
+                    <div class="my-20 grid md:grid-cols-2 items-start">
+                        <div class="space-y-8 text-left relative">
+                            <!-- Email -->
+                            <div class="relative">
+                                <h3 class="font-semibold tracking-widest mb-1">Email</h3>
+                                <p onclick="copyText(this, 'i24106.code@gmail.com')" class="cursor-pointer text-black hover:underline inline-block">i24106.code@gmail.com</p>
+                                <span class="copy-tooltip ml-2 top-1/2 -translate-y-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 transition duration-300 whitespace-nowrap">Copied!</span>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="relative">
+                                <h3 class="font-semibold tracking-widest mb-1">Phone Number</h3>
+                                <p onclick="copyText(this, '0840150947')" class="cursor-pointer text-black hover:underline inline-block">0840150947</p>
+                                <span class="copy-tooltip ml-2 top-1/2 -translate-y-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 transition duration-300 whitespace-nowrap">Copied!</span>
+                            </div>
+
+                            <!-- Line -->
+                            <div class="relative">
+                                <h3 class="font-semibold tracking-widest mb-1">Line</h3>
+                                <p onclick="copyText(this, '@htetooyan_i')" class="cursor-pointer text-black hover:underline inline-block">@htetooyan_i</p>
+                                <span class="copy-tooltip ml-2 top-1/2 -translate-y-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 transition duration-300 whitespace-nowrap">Copied!</span>
+                            </div>
+
+                            <!-- Footer -->
+                            <div>
+                                <p class="text-sm text-gray-500 pt-16 text-center">©2024 Htetooyan All Rights Reserved.</p>
+                            </div>
+                        </div>
+                        <!-- Right Side: Contact Form -->
+                    <div class="space-y-6 border-l-2 border-black pl-8">
+                        <h3 class="font-semibold tracking-widest text-lg mb-4">Send Email</h3>
+                        
+                        <form id="emailForm" class="space-y-4">
+                            <input
+                            type="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                            class="w-full border-2 border-black px-4 py-2 focus:outline-none"
+                            />
+                            
+                            <textarea
+                            name="message"
+                            placeholder="Your message"
+                            required
+                            class="w-full border-2 border-black px-4 py-2 h-32 resize-none focus:outline-none"
+                            ></textarea>
+                            
+                            <button
+                            type="submit"
+                            class="bg-black text-white tracking-widest px-8 py-3 w-full hover:bg-gray-900 transition"
+                            >
+                            SUBMIT
+                            </button>
+                        </form>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+
+        <script type="module">
+
+        import { EMAILJS_CONFIG } from './config.js';
+
+        function copyText(element, text) {
+            navigator.clipboard.writeText(text).then(() => {
+            const tooltip = element.nextElementSibling;
+            tooltip.classList.remove("opacity-0");
+            tooltip.classList.add("opacity-100");
+
+            setTimeout(() => {
+                tooltip.classList.remove("opacity-100");
+                tooltip.classList.add("opacity-0");
+            }, 2000);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            emailjs.init(EMAILJS_CONFIG.publicKey);
+
+            document.getElementById('emailForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                console.log('Form submitted:', this);
+                emailjs.sendForm(EMAILJS_CONFIG.serviceID, EMAILJS_CONFIG.templateID, this)
+                .then(() => {
+                    alert('Email sent successfully!');
+                    this.reset();
+                }, (error) => {
+                    alert('Failed to send email. See console.');
+                    console.error(error);
+                });
+            });
+        });
+
+        </script>
+        
+    </body>
+</html>
