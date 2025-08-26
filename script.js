@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-window.projectDetails = (projectName) => {
-    window.open(`https://github.com/htetooyan-i/${projectName}`, "_blank");
-};
+document.querySelectorAll('[data-project]').forEach(el => {
+    el.addEventListener('click', () => {
+        const projectName = el.dataset.project;
+        window.open(`https://github.com/htetooyan-i/${projectName}`, "_blank");
+    });
+});
