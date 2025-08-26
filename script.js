@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.querySelectorAll('[data-project]').forEach(el => {
     el.addEventListener('click', () => {
+        console.log(el.dataset.project);
         const projectName = el.dataset.project;
         window.open(`https://github.com/htetooyan-i/${projectName}`, "_blank");
     });
